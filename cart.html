@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+      <a href="./home.html"><h2 class="title-home">Home</h2></a>
+      <div class="dropdown">
+        <a href="./product.html"><h2 class="title-dropdown">Products</h2></a>
+        <div class="dropdown-content">
+          <h2 class="content-title">Our products</h2>
+          <div class="dropdown-row">
+            <div class="dropdown-column">
+              <div class="dropdown-column-content">
+                <a href="./friedchicken.html"><h2 class="product-name">Fried Chicken</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./hotdog.html"><h2 class="product-name">Hot dog</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./corndog.html"><h2 class="product-name">Corndog</h2></a>
+              </div>
+            </div>
+            <div class="dropdown-column">
+              <div class="dropdown-column-content">
+                <a href="./hamburger.html"><h2 class="product-name">Hamburger</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./taco.html"><h2 class="product-name">Taco</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./pizza.html"><h2 class="product-name">Pepperoni Pizza</h2></a>
+              </div>
+            </div>
+            <div class="dropdown-column">
+              <div class="dropdown-column-content">
+                <a href="./chickennugget.html"><h2 class="product-name">Chicken Nuggets</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./burrito.html"><h2 class="product-name">Burrito</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./kebab.html"><h2 class="product-name">Kebab</h2></a>
+              </div>
+            </div>
+            <div class="dropdown-column">
+              <div class="dropdown-column-content">
+                <a href="./chip.html"><h2 class="product-name">Chips</h2></a>
+              </div>  
+              <div class="dropdown-column-content">
+                <a href="./sandwich.html"><h2 class="product-name">Sandwich</h2></a>
+              </div>
+              <div class="dropdown-column-content">
+                <a href="./coke.html"><h2 class="product-name">Coke</h2></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="search" class="search" placeholder="Search">
+    <a href="./cart.html"><img
+      class="shopping-bag"
+      src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-bag-interface-kiranshastry-lineal-kiranshastry.png"
+    /></a>
+    <a href="./login.html"
+      ><img
+        class="login-icon"
+        src="https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png"
+    /></a>
+
+      <!-- content -->
+      <h1 class="title">Your Shopping Cart</h1>
+      <table id="table">
+      </table>
+
+      <a href="./checkout.html"><h2 id="button-checkout"></h2></a>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-heading footer-1">
+              <h2>About Us</h2>
+              <a href="#">Blog</a>
+              <a href="#">Demo</a>
+              <a href="#">Customers</a>
+              <a href="#">Investors</a>
+              <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+              <h2>Contact Us</h2>
+              <a href="#">Jobs</a>
+              <a href="#">Support</a>
+              <a href="#">Contact</a>
+              <a href="#">Sponsorships</a>
+            </div>
+            <div class="footer-heading footer-3">
+              <h2>Social Media</h2>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+              <a href="#">Youtube</a>
+            </div>
+            <div class="footer-email-form">
+              <h2>Join us newsletter</h2>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                id="footer-email"
+              />
+              <input type="submit" value="Sign up" id="footer-email-btn" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="./cart.js">
+      </script>
+
+
+</body>
+</html>

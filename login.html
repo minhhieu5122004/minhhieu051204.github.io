@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <Form name="bigform" autocomplete="on" onsubmit="myFunction()">
+        <h1 class="title"><span class="lefttitle">Admin</span><span class="righttitle">Dashboard</span></h1>
+        <h3>Sign in to your account.</h3>
+        <input type="text" placeholder="Email - Format: [...]@gmail.com" pattern="[a-z, 0-9]+@gmail.com" id="email" required>
+        <input type="password" placeholder="Password" id="pwd" required>
+        <img src="https://img.icons8.com/material-outlined/24/000000/visible--v1.png" alt=""  onmousedown="showPassword()">
+        <input type="checkbox" class="checkbox" id="remember">
+        <h2 class="rmb">Remember me</span>
+            <h2 class="forget">Forget Password?</h2>
+            <button type="submit" id="submit"><h2 class="signin">Sign in</h2></button>
+            <h2 class="question">Don't have an account? Sign up</h2>
+    </Form>
+
+    <script>
+        function showPassword() {
+            var x = document.getElementById("pwd");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function myFunction(){
+                alert("Đăng nhập thành công");
+        }
+            
+    </script>
+</body>
+
+</html>

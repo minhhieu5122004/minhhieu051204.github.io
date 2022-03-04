@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+  <div class="header">
+    <a href="./home.html"><h2 class="title-home">Home</h2></a>
+    <div class="dropdown">
+      <a href="./product.html"><h2 class="title-dropdown">Products</h2></a>
+      <div class="dropdown-content">
+        <h2 class="content-title">Our products</h2>
+        <div class="dropdown-row">
+          <div class="dropdown-column">
+            <div class="dropdown-column-content">
+              <a href="./friedchicken.html"><h2 class="product-name">Fried Chicken</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./hotdog.html"><h2 class="product-name">Hot dog</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./corndog.html"><h2 class="product-name">Corndog</h2></a>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <div class="dropdown-column-content">
+              <a href="./hamburger.html"><h2 class="product-name">Hamburger</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./taco.html"><h2 class="product-name">Taco</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./pizza.html"><h2 class="product-name">Pepperoni Pizza</h2></a>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <div class="dropdown-column-content">
+              <a href="./chickennugget.html"><h2 class="product-name">Chicken Nuggets</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./burrito.html"><h2 class="product-name">Burrito</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./kebab.html"><h2 class="product-name">Kebab</h2></a>
+            </div>
+          </div>
+          <div class="dropdown-column">
+            <div class="dropdown-column-content">
+              <a href="./chip.html"><h2 class="product-name">Chips</h2></a>
+            </div>  
+            <div class="dropdown-column-content">
+              <a href="./sandwich.html"><h2 class="product-name">Sandwich</h2></a>
+            </div>
+            <div class="dropdown-column-content">
+              <a href="./coke.html"><h2 class="product-name">Coke</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input type="search" class="search" placeholder="Search">
+  <a href="./cart.html"><img
+    class="shopping-bag"
+    src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-bag-interface-kiranshastry-lineal-kiranshastry.png"
+  /></a>
+  <a href="./login.html"
+    ><img
+      class="login-icon"
+      src="https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png"
+  /></a>
+
+      <!-- content -->
+      <h1>Checkout</h1>
+      <div id="container">
+        <div class="customer-info">
+          <h2 class="customer-info-title">Your Information</h2>
+          <form id="information" action="">
+          <input type="text" placeholder="First Name" class="name-input" id="first-name" required>
+          <input type="text" placeholder="Last Name" class="name-input" id="last-name" required>
+          <h2 class="gender">Gender:</h2>
+          <input type="checkbox"><h3>Male</h3>
+          <input type="checkbox"><h3>Female</h3>
+          <input type="tel" placeholder="Phone number (0-[9 numbers])" pattern="0+[0-9]{9}" class="phone-input" id="phone-number"><br>
+          <input type="text" placeholder="Email - Format: abc@gmail.com" class="email-input" pattern="[a-z0-9]+@gmail.com" id="email">
+          <input type="text" placeholder="Your Address" class="address-input" id="address"><br>
+          <input type="text" placeholder="Promotion Code" class="promocode-input" id="promo-code">
+          <h2 class="payment-method">Payment method:</h2>
+          <img class="cash" onclick="selectPayment()" src="https://img.icons8.com/color/48/000000/cash-.png"/>
+          <img class="visa" src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img class="apple-pay" src="https://img.icons8.com/ios-filled/50/000000/apple-pay.png"/>
+          <img class="master-card" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-mastercard-incorporated-an-american-multinational-financial-services-corporation-logo-color-tal-revivo.png"/>
+          <div class="note-cover">
+            <div class="note">
+              <img class="note-img" src="https://img.icons8.com/material-outlined/24/000000/lock--v1.png"/>
+              <h2 class="notice">Your information<br>is safe</h2>
+            </div>
+            <div class="note">
+              <img class="note-img" src="https://img.icons8.com/android/24/000000/checked-2.png"/>
+              <h2 class="notice">Secure checkout</h2>
+            </div>
+          </div>
+          <a href="./finalcheckout.html"><button class="continue-checkout" onclick="saveInfo()">Save information</button></a>
+          <a href="./finalcheckout.html"><h2 id="gotobill"></h2></a>
+          </form>
+        </div>
+        <div class="products">
+          <table id="table">
+
+          </table>
+          <div class="total-div">
+          <h2 class="total">Total:</h2>
+          <h2 id="total-price"></h2>
+        </div>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-heading footer-1">
+              <h2>About Us</h2>
+              <a href="#">Blog</a>
+              <a href="#">Demo</a>
+              <a href="#">Customers</a>
+              <a href="#">Investors</a>
+              <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+              <h2>Contact Us</h2>
+              <a href="#">Jobs</a>
+              <a href="#">Support</a>
+              <a href="#">Contact</a>
+              <a href="#">Sponsorships</a>
+            </div>
+            <div class="footer-heading footer-3">
+              <h2>Social Media</h2>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+              <a href="#">Youtube</a>
+            </div>
+            <div class="footer-email-form">
+              <h2>Join us newsletter</h2>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                id="footer-email"
+              />
+              <input type="submit" value="Sign up" id="footer-email-btn" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="./checkout.js"></script>
+</body>
+</html>
